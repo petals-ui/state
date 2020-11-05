@@ -21,7 +21,17 @@ gulp.task('concat-style', () => {
 });
 
 gulp.task('copy-scss', () => {
-  execSync('cp -R src dist');
+  return gulp
+    .src('src/style/**/*.scss')
+    .pipe(aliases({"~@petals": "./node_modules/@petals"}))
+    .pipe(scssimport())
+    .pipe(
+      rename((p) => {
+        p.basename = p.basename.replace('.cat.scss', '');
+        p.extname = '.scss';
+      }),
+    )
+    .pipe(gulp.dest('dist/style'));
 });
 
 gulp.task("default", ['concat-style', 'copy-scss']);

@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/petals-ui/state",
   "devDependencies": {
+    "@petals/border": "0.0.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
@@ -36,8 +37,5 @@
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-style-aliases": "^1.1.11",
     "prettier": "^2.1.2"
-  },
-  "dependencies": {
-    "@petals/border": "0.0.1"
   }
 }
