@@ -34,6 +34,7 @@
     "gulp-shopify-sass": "^0.3.3",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-strip-css-comments": "^2.0.0",
+    "gulp-style-aliases": "^1.1.11",
     "prettier": "^2.1.2"
   },
   "dependencies": {

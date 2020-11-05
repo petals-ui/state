@@ -1,13 +1,15 @@
 const gulp = require("gulp");
 const concat = require("gulp-concat");
-const rename = require("gulp-rename");
+const aliases = require('gulp-style-aliases');
 const scssimport = require('gulp-shopify-sass');
+const rename = require("gulp-rename");
 const execSync = require('child_process').execSync;
 
 gulp.task('concat-style', () => {
   return gulp
     .src(['variables', 'rules'].map(entry => `src/style/_${entry}.scss`))
     .pipe(concat('style.scss'))
+    .pipe(aliases({"~@petals": "./node_modules/@petals"}))
     .pipe(scssimport())
     .pipe(
       rename((p) => {
