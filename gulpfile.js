@@ -3,7 +3,6 @@ const concat = require("gulp-concat");
 const aliases = require('gulp-style-aliases');
 const scssimport = require('gulp-shopify-sass');
 const rename = require("gulp-rename");
-const execSync = require('child_process').execSync;
 
 gulp.task('concat-style', () => {
   return gulp
