@@ -1,3 +1,3 @@
-# Petals Template
+# Petals State
 
-Scaffold template for petals (components)
+State virtual component

@@ -1,8 +1,7 @@
 {
-  "name": "@petals/template",
+  "name": "@petals/state",
   "version": "0.0.0",
-  "description": "Scaffold template for petals (components)",
-  "private": true,
+  "description": "State virtual component",
   "main": "style.scss",
   "sass": "style.scss",
   "scripts": {
@@ -18,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/petals-ui/template.git"
+    "url": "git+https://github.com/petals-ui/state.git"
   },
   "author": "Ourai Lin <ourairyu@gmail.com> (https://ourai.ws/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/petals-ui/template/issues"
+    "url": "https://github.com/petals-ui/state/issues"
   },
-  "homepage": "https://github.com/petals-ui/template",
+  "homepage": "https://github.com/petals-ui/state",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
@@ -36,5 +35,8 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-strip-css-comments": "^2.0.0",
     "prettier": "^2.1.2"
+  },
+  "dependencies": {
+    "@petals/border": "0.0.1"
   }
 }
